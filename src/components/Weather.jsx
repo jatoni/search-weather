@@ -36,7 +36,7 @@ const Weather = ({ responses, setResponses, setLleno, lleno }) => {
                 (
                     <div className={`container-found ${lleno ? "vista-view" : "vista-hidden"}`}>
                         <div className="w-full flex justify-center">
-                            <img className="img-formato" className="notFound" src="src/assets/Monster 404 Error-amico.svg" alt="404" />
+                            <img className="img-formato" src="src/assets/Monster 404 Error-amico.svg" alt="404" />
                         </div>
                         <div>
                             <button onClick={handlechange} className="bg-slate-900 text-white w-full p-1 rounded-xl hover:bg-slate-600">Resetear</button>

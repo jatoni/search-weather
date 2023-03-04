@@ -54,8 +54,8 @@
 }
 
 .img-formato{
-  width: 40px;
-  height: 40px;
+  width: 70%;
+  height: 70%;
 }
 
 .vista-view {
@@ -81,6 +81,16 @@
     width: 30%;
     border-radius: 20px;
   }
+  .img-formato{
+    width: 30%;
+    height: 30%;
+  }
+}
+@media only screen and (max-width: 820px){
+  .img-formato{
+    width: 80%;
+    height: 30%;
+  }
 }
 
 @media only screen and (max-width: 414px) {
@@ -90,5 +100,9 @@
   .notFound {
     width: 90%;
     border-radius: 20px;
+  }
+  .img-formato{
+    width: 86%;
+    height: 86%;
   }
 }
