@@ -21,12 +21,12 @@ const Weather = ({ responses, setResponses, setLleno, lleno }) => {
                         <p className="text-center font-extrabold text-teal-900">{weather[0].main}</p>
                     </div>
                     <div className="flex gap-5 columna">
-                        <p className="flex gap-2 text-neutral-600 font-medium"><span className="flex text-gray-900 font-semibold"><img src="src/assets/icons8-temperatura-30.svg" alt="temp" />Temperatura:</span>{main.temp}°C</p>
-                        <p className="flex gap-2 text-neutral-600 font-medium"><span className="flex text-gray-900 font-semibold"><img src="src/assets/icons8-humedad-30.svg" alt="hum" />Humedad:</span> {main.humidity}%</p>
+                        <p className="flex gap-2 text-neutral-600 font-medium"><span className="flex text-gray-900 font-semibold"><img className="img-formato" src="src/assets/thermometer-temperature-svgrepo-com.svg" alt="temp" />Temperatura:</span>{main.temp}°C</p>
+                        <p className="flex gap-2 text-neutral-600 font-medium"><span className="flex text-gray-900 font-semibold"><img className="img-formato" src="src/assets/humidity_weather_icon_148585.svg" alt="hum" />Humedad:</span> {main.humidity}%</p>
                     </div>
                     <div className="flex gap-5 columna">
-                        <p className="flex gap-2 text-neutral-600 font-medium"><span className="flex text-gray-900 font-semibold"><img src="src/assets/icons8-temperatura-30.svg" alt="temp" />Speed:</span>{wind.speed}km/h</p>
-                        <p className="flex gap-2 text-neutral-600 font-medium"><span className="flex text-gray-900 font-semibold"><img src="src/assets/icons8-humedad-30.svg" alt="hum" />Descripcion:</span> {weather[0].description}</p>
+                        <p className="flex gap-2 text-neutral-600 font-medium"><span className="flex text-gray-900 font-semibold"><img className="img-formato" src="src/assets/thermometer-temperature-svgrepo-com.svg" alt="temp" />Speed:</span>{wind.speed}km/h</p>
+                        <p className="flex gap-2 text-neutral-600 font-medium"><span className="flex text-gray-900 font-semibold"><img className="img-formato" src="src/assets/humidity_weather_icon_148585.svg" alt="hum" />Descripcion:</span> {weather[0].description}</p>
                     </div>
                     <div>
                         <button onClick={handlechange} className="bg-slate-900 text-white w-full p-1 rounded-xl hover:bg-slate-600">Resetear</button>
@@ -36,7 +36,7 @@ const Weather = ({ responses, setResponses, setLleno, lleno }) => {
                 (
                     <div className={`container-found ${lleno ? "vista-view" : "vista-hidden"}`}>
                         <div className="w-full flex justify-center">
-                            <img className="notFound" src="src/assets/error404quees.svg" alt="404" />
+                            <img className="img-formato" className="notFound" src="src/assets/Monster 404 Error-amico.svg" alt="404" />
                         </div>
                         <div>
                             <button onClick={handlechange} className="bg-slate-900 text-white w-full p-1 rounded-xl hover:bg-slate-600">Resetear</button>
