@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.alto {
+  transition: all 1.5s ease;
+  height: 60%;
+}
+
+.bajo {
+  transition: all 1.5s ease;
+  height: 20%;
+}
+
+.img {
+  width: 5.7rem;
+}
+
+.boton {
+  background-color: cadetblue;
+}
+
+.boton:hover {
+  background-color: rgba(95, 158, 160, 0.527);
+}
+
+.notFound {
+  width: 80%;
+  border-radius: 20px;
+}
+
+.notFound img {
+  width: 60%;
+  height: 60%;
+}
+
+.container-found {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vista-view {
+  opacity: 1;
+  transition: all .6s ease;
+}
+
+.vista-hidden {
+  opacity: 0;
+  transition: all .6s ease;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-weather {
+    width: 100%;
+  }
+
+  .alto {
+    transition: all 1.5s ease;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .columna {
+    flex-direction: column;
+  }
+}
