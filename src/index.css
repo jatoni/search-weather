@@ -53,9 +53,14 @@
   flex-direction: column;
 }
 
-.img-formato{
+.img-formato {
   width: 70%;
   height: 70%;
+}
+
+.img-formato-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .vista-view {
@@ -77,17 +82,20 @@
     transition: all 1.5s ease;
     height: 80%;
   }
+
   .notFound {
     width: 30%;
     border-radius: 20px;
   }
-  .img-formato{
+
+  .img-formato {
     width: 30%;
     height: 30%;
   }
 }
-@media only screen and (max-width: 820px){
-  .img-formato{
+
+@media only screen and (max-width: 820px) {
+  .img-formato {
     width: 80%;
     height: 30%;
   }
@@ -97,11 +105,13 @@
   .columna {
     flex-direction: column;
   }
+
   .notFound {
     width: 90%;
     border-radius: 20px;
   }
-  .img-formato{
+
+  .img-formato {
     width: 86%;
     height: 86%;
   }
